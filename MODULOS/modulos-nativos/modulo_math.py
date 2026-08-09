@@ -4,7 +4,7 @@ continuar = "s"
 
 while continuar == "s":
 
-    numero = float(input("\nDigite um número: "))
+    numero = int(input("\nDigite um número: "))
 
     if numero >= 0:
         raiz = math.sqrt(numero) # raiz quadrada
@@ -15,6 +15,7 @@ while continuar == "s":
 
     print(f"Número arredondado para cima: {math.ceil(numero)}") # arredonda para cima
     print(f"Número arredondado para baixo: {math.floor(numero)}") # Arredonda para baixo
+    print(f"Fatorial de {numero} é: {math.factorial(numero)}") # Fatorial
     print(f"Valor de PI: {math.pi}") # Valor do PI
 
     continuar = input("\nDeseja continuar se sim [s] se nao [n]: ").lower()
