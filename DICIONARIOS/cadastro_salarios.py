@@ -2,16 +2,21 @@
 Realizar o cadastro de funcionarios com nome, idade, função, salario e buscar a media, salario maximo, salario minimo e total
 
 """
+# Lista de funcionarios
 funcionarios = []
 
+# Lista de salarios
 salarios = []
 
 quantidade = int(input("Quantidade de funcionarios deseja cadastrar? "))
 
+# Repita o código abaixo uma determinada quantidade de vezes. "quantidade x o numero desejado no input()"
 for i in range(quantidade):
 
+    # strip(): remove espaços desnecessários no começo e no final, .capitalize() coloca a primeira letra em maiúscula:
+    # criando um dicionário. com input()
     funcionario = {
-        "nome": input("Nome: ").strip().capitalize(),
+        "nome": input("Nome: ").strip().capitalize(), # Crie a chave "nome" e coloque nela o que o usuário digitar.
         "idade": int(input("Idade: ")),
         "funcao": input("Função: ").strip(),
         "salario": float(input("Salario: R$ "))
@@ -32,7 +37,7 @@ for i in range(quantidade):
             f"Função: {funcionario['funcao']} | "
             f"Salario: R$ {funcionario['salario']}"
         )
-
+# Criando as variaveis para realizar os calculos
 soma_salario = sum(salarios)
 maior_salario = max(salarios)
 menor_salario = min(salarios)
