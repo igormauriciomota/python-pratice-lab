@@ -1,46 +1,30 @@
 # Importa o modulo inteiro
+from entrada import ler_numero, ler_operacao
+from calculadora import calcular
 
-import calculadora
+def main():
 
-continuar = True
+    continuar = "s"
 
-while continuar:
+    while continuar == "s":
 
-    print("\n === Calculadora Simples === ")
+        print("\n === Calculadora Modular === ")
 
-    numero1 = float(input("\nDigite o primeiro número: "))
-    numero2 = float(input("\nDigite o segundo número: "))
+        numero1 = ler_numero("\nDigite o primeiro número: ")
 
-    print("\nEscolha a operação:")
-    print(" +  Soma")
-    print(" -  Subtração")
-    print(" *  Multiplicação")
-    print(" /  Divisão")
+        numero2 = ler_numero("\nDigite o segundo número: ")
 
-    operacao = input("\nDigite a operação desejada (+, -, *, /): ")
+        operacao = ler_operacao()
 
-    if operacao == "+":
-        resultado = calculadora.soma(numero1, numero2)
-        
-    elif operacao == "-":
-        resultado = calculadora.subtracao(numero1, numero2)
-        
-    elif operacao == "*":
-        resultado = calculadora.multiplicacao(numero1, numero2)
-        
-    elif operacao == "/":
-        resultado = calculadora.divisao(numero1, numero2)
+        resultado = calcular(numero1, numero2, operacao)
 
-        if resultado is None:
-            print("Erro: Divisão por zero!")
+        print(f"Resultado: {resultado}")
 
-        
-    else:
-        print("Operação inválida!")
+        continuar = input("\n Deseja realizar outro cálculo? (s/n)").strip().lower()
 
-    if resultado is not None:
-        print(f"\nResultado: {resultado}")
+    print("\nPrograma finalizado.")
 
-    continuar = input("\nDeseja realizar outra operação? (s/n): ").lower() == "s"
+if __name__ == "__main__":
+    main()
 
-print("\nObrigado por usar a calculadora!")
+
