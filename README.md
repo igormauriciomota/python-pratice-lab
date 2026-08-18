@@ -359,36 +359,52 @@ Novas tecnologias poderão ser adicionadas conforme a evolução dos projetos.
 A estrutura poderá evoluir junto com os estudos:
 
 ```text
-python-learning-lab/
+python-practice-lab/
 │
-├── 01-fundamentos/
+├── 01-python-fundamentals/
 │
-├── 02-listas/
+├── 02-python-list-practice/
 │
-├── 03-dicionarios/
+├── 03-python-dict-practice/
 │
-├── 04-condicionais/
+├── 04-python-conditionals-practice/
 │
-├── 05-loops/
+├── 05-python-loops-practice/
 │
-├── 06-funcoes/
+├── 06-python-function-practice/
 │
-├── 07-modulos/
+├── 07-python-modules-practice/
 │
-├── 08-pacotes/
+├── 08-python-packages-practice/
 │
-├── 09-poo/
+├── 09-python-exceptions-practice/
 │
-├── 10-arquivos/
+├── 10-python-files-practice/
 │
-├── 11-sqlite/
+├── 11-python-oop-practice/
 │
-├── 12-crud/
+├── 12-sql-practice/
 │
-├── 13-desafios/
+├── 13-sqlite-practice/
 │
-├── 14-mini-projetos/
+├── 14-crud-practice/
 │
+├── 15-python-auth-practice/
+│
+├── 16-python-auth-crud-lab/
+│
+├── 17-flask-practice-lab/
+│
+├── 18-api-practice-lab/
+│
+├── 19-data-analysis-practice/
+│
+├── 20-mini-projects/
+│
+├── venv/
+│
+├── .gitattributes
+├── .gitignore
 └── README.md
 ```
 
