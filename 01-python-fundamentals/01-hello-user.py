@@ -3,4 +3,3 @@ cidade = input("Digite sua cidade: ").strip().title()
 
 print(f"Ola, {nome}!")
 print(f"Voce mora em {cidade}.")
-
