@@ -1,8 +1,6 @@
 """
-
-
+Exercicio soma as notas dos alunos em diversas atividades escolares, e realiza a soma, media e statuas do aluno
 """
-
 nome = input("Nome do aluno: ").strip().title()
 prova = float(input("Nota da prova: "))
 exercicio = float(input("Nota do exercicio: "))
