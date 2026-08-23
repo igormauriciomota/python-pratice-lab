@@ -7,11 +7,16 @@ def converter_idade(texto):
 
     if not 0 <= idade <= 130:
         raise ValueError("Idade fora da faixa permitida.")
+    
     return idade
 
+texto_digitado = int(input("Digite sua idade: "))
 
-for entrada in ("30", "trinta", "200"):
-    try:
-        print(converter_idade(entrada))
-    except ValueError as erro:
+
+
+try:
+    idade = converter_idade(texto_digitado)
+    print(f"Idade cadastrada: {idade} anos.")
+    
+except ValueError as erro:
         print("Erro:", erro)
