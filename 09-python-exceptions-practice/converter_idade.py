@@ -12,11 +12,9 @@ def converter_idade(texto):
 
 texto_digitado = int(input("Digite sua idade: "))
 
-
-
 try:
     idade = converter_idade(texto_digitado)
     print(f"Idade cadastrada: {idade} anos.")
-    
+
 except ValueError as erro:
         print("Erro:", erro)
