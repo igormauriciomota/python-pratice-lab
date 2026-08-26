@@ -1,3 +1,7 @@
+"""
+Uma loja precisa calcular descontos diferentes para clientes novos, regulares e VIP, respeitando
+também o valor da compra.
+"""
 valor_compra = float(input("Valor da compra: R$ ").replace(",","."))
 
 tipo_cliente = input("Tipo [novo/regular/vip]: ").strip().lower()
