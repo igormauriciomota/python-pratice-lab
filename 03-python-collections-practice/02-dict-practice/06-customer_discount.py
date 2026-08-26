@@ -36,3 +36,4 @@ else:
     print(f"Desconto: {desconto}%.")
     print(f"Valor descontado: R$ {valor_desconto:.2f}")
     print(f"Total: R$ {valor_final:.2f}")
+
