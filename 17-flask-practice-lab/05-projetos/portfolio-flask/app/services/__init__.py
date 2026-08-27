@@ -1,1 +1,0 @@
-"""Serviços reutilizáveis da aplicação."""
